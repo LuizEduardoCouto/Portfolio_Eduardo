@@ -75,6 +75,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
+    background: url('img/dudu.png');
 }
 
 .home-content {
@@ -206,4 +207,19 @@ section{
 }
 .home-sci a:hover:before {
     width: 100%;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 2s;
+}
+
+.home-imgHover:hover {
+    background: var(--bg-color);
+    opacity: .16;
 }
