@@ -7,13 +7,17 @@
     <title>Portfolio dudu</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Eduardo.UX</a>
 
+        <div class="bx bx-menu" id="menu-icon"></div>
+
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#sobre_mim">Sobre mim</a>
             <a href="#trabalhos">Trabalhos</a>
             <a href="#estudos">Estudos</a>
@@ -22,6 +26,21 @@
 
         </nav>
     </header>
+
+    <!--home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Oi, sou <span> Luiz Eduardo</span></h1>
+            <div class="text-animate">
+                <h3>UX_UI Designer</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ab eius blanditiis alias, delectus rem natus adipisci reprehenderit quia, dignissimos voluptate quasi nostrum quae tempora est omnis quisquam voluptas nobis?</p>
+            <div class="btn-box">
+                <a href="#" class="btn">Me Contrate</a>
+                <a href="#" class="btn">Conversar</a>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
