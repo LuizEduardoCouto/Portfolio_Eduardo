@@ -19,7 +19,6 @@
 
 html {
     font-size: 62.5%;
-    overflow: hidden;
 }
 
 body {
@@ -71,7 +70,7 @@ section {
     padding: 10rem 9% 2rem;
 }
 
-.home{
+.home {
     display: flex;
     align-items: center;
     padding: 0 9%;
@@ -224,7 +223,7 @@ section {
     opacity: .8;
 }
 
-.sobre {
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,6 +232,7 @@ section {
     background: var(--second-bg-color);
     padding-bottom: 6rem;
 }
+
 
 .heading {
     font-size: 5rem;
@@ -244,7 +244,7 @@ span {
     color: var(--main-color);
 }
 
-.sobre-img {
+.about-img {
     position: relative;
     width: 30rem;
     height: 30rem;
@@ -253,13 +253,13 @@ span {
     align-items: center;
 }
 
-.sobre-img img {
+.about-img img {
     width: 90%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
 
-.sobre-img .circle-spin {
+.about-img .circle-spin {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -273,15 +273,15 @@ span {
     border-right: .2rem solid var(--main-color);
 }
 
-.sobre-content {
+.about-content {
     text-align: center;
 }
 
-.sobre-content h3 {
+.about-content h3 {
     font-size: 2.6rem;
 }
 
-.sobre-content p {
+.about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
