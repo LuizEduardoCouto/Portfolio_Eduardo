@@ -329,9 +329,58 @@ span {
     padding-left: 2rem;
 }
 
+.experiences-box .experiences-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
 .experiences-content .content {
     position: relative;
     padding: 1.5rem;
     border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
 
+.experiences-content .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.experiences-content .content:hover::before {
+    width: 100%;
+}
+
+.experiences-content .content .year {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.experiences-content .content .year i {
+    padding-right: .5rem;
+
+}
+
+.experiences-content .content h3 {
+    font-size: 2rem;
+}
+
+.experiences-content .content p {
+    font-size: 1.6rem; 
+    padding-top: 5rem;
 }
