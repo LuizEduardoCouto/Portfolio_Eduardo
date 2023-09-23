@@ -1,5 +1,5 @@
 // toggle icon navbar
-
+1:16:13
 
 // scroll sections
 let sections = document.querySelectorAll('section');
@@ -20,7 +20,7 @@ window.onscroll = () => {
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             })
         }
-    })
+    });
 
     // sticky header
     let hearder = document.querySelector('header')
