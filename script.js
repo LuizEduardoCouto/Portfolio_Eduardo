@@ -1,5 +1,11 @@
 // toggle icon navbar
-1:16:13
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
 
 // scroll sections
 let sections = document.querySelectorAll('section');
@@ -19,6 +25,12 @@ window.onscroll = () => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             })
+            /* active sections for animation on scroll */
+            sec.classList.add('show-animate');
+        }
+        /* animation that repeats on scroll */
+        else {
+            sec.classList.remove('show-animate');
         }
     });
 
@@ -26,4 +38,13 @@ window.onscroll = () => {
     let hearder = document.querySelector('header')
 
     hearder.classList.toggle('sticky', window.scrollY > 100)
+
+    //remove toggle icon and navbar when click navbar links (scroll)//
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+
+    //animation footer on scroll//
+    let footer = document.querySelector('footer');
+
+    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
